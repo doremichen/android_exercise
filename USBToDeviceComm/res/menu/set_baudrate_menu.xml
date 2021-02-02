@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/baudrate_set_level_group" android:checkableBehavior="single">
+        <item android:id="@+id/baudrate_item_one" android:title="@string/str_baudrate_menu_item1"></item>
+        <item android:id="@+id/baudrate_item_two" android:title="@string/str_baudrate_menu_item2"></item>
+        <item android:id="@+id/baudrate_item_three" android:title="@string/str_baudrate_menu_item3"></item>
+        <item android:id="@+id/baudrate_item_four" android:title="@string/str_baudrate_menu_item4"></item>
+        <item android:id="@+id/baudrate_item_five" android:title="@string/str_baudrate_menu_item5"></item>
+        <item android:id="@+id/baudrate_item_six" android:title="@string/str_baudrate_menu_item6"></item>
+        <item android:id="@+id/baudrate_item_seven" android:title="@string/str_baudrate_menu_item7"></item>
+        <item android:id="@+id/baudrate_item_eight" android:title="@string/str_baudrate_menu_item8"></item>
+        <item android:id="@+id/baudrate_item_nine" android:title="@string/str_baudrate_menu_item9"></item>
+        <item android:id="@+id/baudrate_item_ten" android:title="@string/str_baudrate_menu_item10"></item> 
+    </group>
+</menu>

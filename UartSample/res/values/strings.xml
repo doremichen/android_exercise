@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UartSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="str_open_uart">Open Uart</string>
+    <string name="str_set_uart">Set Uart</string>
+    <string name="str_close_uart">Close Uart</string>
+    <string name="str_send_uart_msg">Send Uart Msg</string>
+    <string name="str_recevie_uart_msg">Receive Uart Msg</string>
+    <string name="str_exit_uart">Exit</string>
+
+</resources>
