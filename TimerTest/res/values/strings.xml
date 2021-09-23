@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TimerTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="battery_info_txt">Battery Info: ---</string>
+    <string name="info_txt">Info: ---</string>
+    <string name="btn_start_txt">Start</string>
+    <string name="btn_stop_txt">Stop</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
