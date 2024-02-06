@@ -1,0 +1,18 @@
+//
+// AutoBootService
+//
+
+android_app {
+    name: "AutoBootService",
+
+    platform_apis: true,
+
+    srcs: ["src/**/*.java"],
+    
+    // system app
+    certificate: "platform",
+    
+    product_specific: true,
+    privileged: true,
+
+}
