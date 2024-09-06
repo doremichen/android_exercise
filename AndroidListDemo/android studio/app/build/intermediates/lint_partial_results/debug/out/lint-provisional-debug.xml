@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.0" type="conditional_incidents">
+
+    <incident
+        id="RtlSymmetry"
+        severity="warning"
+        message="When you define `paddingLeft` you should probably also define `paddingRight` for right-to-left symmetry">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/button_layout.xml"
+            line="13"
+            column="9"
+            startOffset="471"
+            endLine="13"
+            endColumn="28"
+            endOffset="490"/>
+        <map>
+            <entry
+                name="applies"
+                int="2"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider adding `android:paddingStart=&quot;20dp&quot;` to better support right-to-left layouts">
+        <fix-attribute
+            description="Add android:paddingStart=&quot;20dp&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="paddingStart"
+            value="20dp"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/button_layout.xml"
+            line="13"
+            column="9"
+            startOffset="471"
+            endLine="13"
+            endColumn="28"
+            endOffset="490"/>
+        <map>
+            <entry
+                name="applies"
+                int="4"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;20dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:paddingStart=&quot;20dp&quot;"
+            oldString="paddingLeft"
+            replacement="paddingStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/button_layout.xml"
+            line="13"
+            column="9"
+            startOffset="471"
+            endLine="13"
+            endColumn="28"
+            endOffset="490"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider adding `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-attribute
+            description="Add android:layout_marginStart=&quot;8dp&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="layout_marginStart"
+            value="8dp"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/button_layout.xml"
+            line="21"
+            column="9"
+            startOffset="732"
+            endLine="21"
+            endColumn="34"
+            endOffset="757"/>
+        <map>
+            <entry
+                name="applies"
+                int="4"/>
+        </map>
+    </incident>
+
+    <incident
+        id="RtlHardcoded"
+        severity="warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts">
+        <fix-replace
+            description="Replace with android:layout_marginStart=&quot;8dp&quot;"
+            oldString="layout_marginLeft"
+            replacement="layout_marginStart"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/button_layout.xml"
+            line="21"
+            column="9"
+            startOffset="732"
+            endLine="21"
+            endColumn="34"
+            endOffset="757"/>
+        <map>
+            <entry
+                name="applies"
+                int="10"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ExpiredTargetSdkVersion"
+        severity="fatal"
+        message="Google Play requires that apps target API level 31 or higher.&#xA;">
+        <fix-replace
+            description="Update targetSdkVersion to 34"
+            oldString="16"
+            replacement="34"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="10"
+            column="9"
+            startOffset="222"
+            endLine="10"
+            endColumn="28"
+            endOffset="241"/>
+    </incident>
+
+</incidents>

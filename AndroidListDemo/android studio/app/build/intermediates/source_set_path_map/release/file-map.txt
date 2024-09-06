@@ -1,0 +1,8 @@
+com.adam.app.androidlistdemo.app-pngs-0 E:\AndroidStudioProjects\AndroidListDemo\app\build\generated\res\pngs\release
+com.adam.app.androidlistdemo.app-resValues-1 E:\AndroidStudioProjects\AndroidListDemo\app\build\generated\res\resValues\release
+com.adam.app.androidlistdemo.app-rs-2 E:\AndroidStudioProjects\AndroidListDemo\app\build\generated\res\rs\release
+com.adam.app.androidlistdemo.app-mergeReleaseResources-3 E:\AndroidStudioProjects\AndroidListDemo\app\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.adam.app.androidlistdemo.app-mergeReleaseResources-4 E:\AndroidStudioProjects\AndroidListDemo\app\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.adam.app.androidlistdemo.app-merged_res-5 E:\AndroidStudioProjects\AndroidListDemo\app\build\intermediates\merged_res\release
+com.adam.app.androidlistdemo.app-main-6 E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res
+com.adam.app.androidlistdemo.app-release-7 E:\AndroidStudioProjects\AndroidListDemo\app\src\release\res

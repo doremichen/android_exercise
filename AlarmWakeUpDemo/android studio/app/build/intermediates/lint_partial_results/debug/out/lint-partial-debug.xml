@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="partial_results">
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="dimen[activity_vertical_margin(U),activity_horizontal_margin(U)],drawable[ic_launcher(U)],id[action_settings(U),LinearLayout1(D),button1(D),editText1(U)],layout[activity_main(U)],menu[main(U)],string[action_settings(U),app_name(U),hello_world(U)],style[AppBaseTheme(U),AppTheme(U)];7^0^1^b,8^9,d^c;;;"/>
+    </map>
+
+</incidents>

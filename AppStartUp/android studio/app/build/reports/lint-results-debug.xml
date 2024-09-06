@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.4.2">
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.&#xA;&#xA;To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:&#xA;https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        url="https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        urls="https://developer.android.com/distribute/best-practices/develop/target-sdk.html,https://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        android:targetSdkVersion=&quot;17&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\src\main\AndroidManifest.xml"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.android.support:support-v4 than 18.0.0 is available: 28.0.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;com.android.support:support-v4:18.0.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\build.gradle"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `minSdkVersion` value (`17`) is not used; it is always overridden by the value specified in the Gradle build script (`17`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="        android:minSdkVersion=&quot;17&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\src\main\AndroidManifest.xml"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `targetSdkVersion` value (`17`) is not used; it is always overridden by the value specified in the Gradle build script (`17`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="        android:targetSdkVersion=&quot;17&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\src\main\AndroidManifest.xml"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Deprecated"
+        severity="Warning"
+        message="Consider removing `sharedUserId` for new users by adding `android:sharedUserMaxSdkVersion=&quot;32&quot;` to your manifest. See https://developer.android.com/guide/topics/manifest/manifest-element for details."
+        category="Correctness"
+        priority="2"
+        summary="Using deprecated resources"
+        explanation="Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You&apos;ve been warned."
+        errorLine1="    android:sharedUserId=&quot;android.uid.system&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\src\main\AndroidManifest.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="IntentFilterExportedReceiver"
+        severity="Warning"
+        message="As of Android 12, `android:exported` must be set; use `true` to make the activity \&#xA;available to other apps, and `false` otherwise."
+        category="Security"
+        priority="5"
+        summary="Unspecified `android:exported` in manifest"
+        explanation="Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined. Otherwise, installation will fail. Set it to `true` to make this activity accessible to other apps, and `false` to limit it to be used only by this app or the OS. For launch activities, this should be set to true; otherwise, the app will fail to launch.&#xA;&#xA;Previously, `android:exported` for components without any intent filters present used to default to `false`, and when intent filters were present, the default was `true`. Defaults which change value based on other values are confusing and lead to apps accidentally exporting components as a side-effect of adding intent filters. This is a security risk, and we have made this change to avoid introducing accidental vulnerabilities.&#xA;&#xA;While the default without intent filters remains unchanged, it is now required to explicitly specify a value when intent filters are present. Any app failing to meet this requirement will fail to install on any Android version after Android 11.&#xA;&#xA;We recommend setting `android:exported` to false (even on previous versions of Android prior to this requirement) unless you have a good reason to export a particular component."
+        errorLine1="        &lt;receiver android:name=&quot;.BootUpReceiver&quot;>"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\src\main\AndroidManifest.xml"
+            line="20"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ExpiredTargetSdkVersion"
+        severity="Fatal"
+        message="Google Play requires that apps target API level 31 or higher.&#xA;"
+        category="Compliance"
+        priority="8"
+        summary="TargetSdkVersion No Longer Supported"
+        explanation="As of the second half of 2018, Google Play requires that new apps and app updates target API level 26 or higher.&#xA;&#xA;Configuring your app to target a recent API level ensures that users benefit from significant security and performance improvements, while still allowing your app to run on older Android versions (down to the `minSdkVersion`).&#xA;&#xA;To update your `targetSdkVersion`, follow the steps from &quot;Meeting Google Play requirements for target API level&quot;, https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        url="https://support.google.com/googleplay/android-developer/answer/113469#targetsdk"
+        urls="https://support.google.com/googleplay/android-developer/answer/113469#targetsdk,https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        errorLine1="        targetSdkVersion 17"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\build.gradle"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="This folder configuration (`v11`) is unnecessary; `minSdkVersion` is 17. Merge all the resources in this folder into `values`."
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder.">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\src\main\res\values-v11"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="This folder configuration (`v14`) is unnecessary; `minSdkVersion` is 17. Merge all the resources in this folder into `values`."
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder.">
+        <location
+            file="E:\AndroidStudioProjects\AppStartUp\app\src\main\res\values-v14"/>
+    </issue>
+
+</issues>

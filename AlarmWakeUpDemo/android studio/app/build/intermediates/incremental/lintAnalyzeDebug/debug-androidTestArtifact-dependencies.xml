@@ -1,0 +1,8 @@
+<dependencies>
+  <compile
+      roots="E:\AndroidStudioProjects\AlarmWakeUpDemo@@:app::debug">
+    <dependency
+        name="E:\AndroidStudioProjects\AlarmWakeUpDemo@@:app::debug"
+        simpleName=":"/>
+  </compile>
+</dependencies>

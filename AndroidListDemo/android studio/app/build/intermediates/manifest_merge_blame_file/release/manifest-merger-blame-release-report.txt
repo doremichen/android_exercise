@@ -1,0 +1,79 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.adam.app.androidlistdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:7:5-9:41
+8        android:minSdkVersion="8"
+8-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:8:9-34
+9        android:targetSdkVersion="16" />
+9-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:9:9-38
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:10:5-66
+11-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:10:22-64
+12
+13    <application
+13-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:10:66-29:19
+14        android:allowBackup="true"
+14-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:10:79-105
+15        android:icon="@drawable/ic_launcher"
+15-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:10:106-142
+16        android:label="@string/app_name"
+16-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:10:143-175
+17        android:theme="@style/AppTheme" >
+17-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:10:176-207
+18        <activity
+18-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:11:9-18:20
+19            android:name="com.adam.app.androidlistdemo.MainActivity"
+19-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:11:19-75
+20            android:exported="true"
+20-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:12:13-36
+21            android:label="@string/app_name" >
+21-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:11:76-108
+22            <intent-filter>
+22-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:13:13-17:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:14:17-69
+23-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:14:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:16:17-77
+25-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:16:27-74
+26            </intent-filter>
+27        </activity>
+28        <activity android:name="com.adam.app.androidlistdemo.CustBtnMain" />
+28-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:19:9-57
+28-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:19:19-45
+29        <activity android:name="com.adam.app.androidlistdemo.DialogDemo" />
+29-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:20:9-56
+29-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:20:19-44
+30        <activity android:name="com.adam.app.androidlistdemo.MyImageViewAct" />
+30-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:21:9-60
+30-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:21:19-48
+31        <activity android:name="com.adam.app.androidlistdemo.ReadTextTest" />
+31-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:22:9-58
+31-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:22:19-46
+32        <activity android:name="com.adam.app.androidlistdemo.ParcelableActivity1" />
+32-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:23:9-65
+32-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:23:19-53
+33        <activity android:name="com.adam.app.androidlistdemo.ParcelableActivity2" />
+33-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:24:9-65
+33-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:24:19-53
+34        <activity android:name="com.adam.app.androidlistdemo.CanvasView" />
+34-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:25:9-56
+34-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:25:19-44
+35        <activity android:name="com.adam.app.androidlistdemo.URLTest" />
+35-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:26:9-53
+35-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:26:19-41
+36        <activity android:name="com.adam.app.androidlistdemo.HandlerTest" />
+36-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:27:9-57
+36-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:27:19-45
+37        <activity android:name="com.adam.app.androidlistdemo.AsyncTaskTest" />
+37-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:28:9-59
+37-->E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:28:19-47
+38    </application>
+39
+40</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="incidents">
+
+    <incident
+        id="GradleOverrides"
+        severity="warning"
+        message="This `minSdkVersion` value (`8`) is not used; it is always overridden by the value specified in the Gradle build script (`8`)">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="8"
+            column="9"
+            startOffset="233"
+            endLine="8"
+            endColumn="34"
+            endOffset="258"/>
+    </incident>
+
+    <incident
+        id="GradleOverrides"
+        severity="warning"
+        message="This `targetSdkVersion` value (`17`) is not used; it is always overridden by the value specified in the Gradle build script (`34`)">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="9"
+            column="9"
+            startOffset="268"
+            endLine="9"
+            endColumn="38"
+            endOffset="297"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 34"
+            oldPattern="targetSdkVersion\s*=\s*[&quot;&apos;](.*)[&quot;&apos;]"
+            replacement="34"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="9"
+            column="9"
+            startOffset="268"
+            endLine="9"
+            endColumn="38"
+            endOffset="297"/>
+    </incident>
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="18"
+            column="13"
+            startOffset="582"
+            endLine="18"
+            endColumn="45"
+            endOffset="614"/>
+    </incident>
+
+    <incident
+        id="GradleCompatible"
+        severity="fatal"
+        message="Version 28 (intended for Android Pie and below) is the last version of the legacy support library, so we recommend that you migrate to AndroidX libraries when using Android Q and moving forward. The IDE can help with this: Refactor > Migrate to AndroidX...">
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="25"
+            column="20"
+            startOffset="501"
+            endLine="25"
+            endColumn="59"
+            endOffset="540"/>
+    </incident>
+
+</incidents>

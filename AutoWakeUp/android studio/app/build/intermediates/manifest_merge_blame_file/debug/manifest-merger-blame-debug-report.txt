@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.adam.app"
+4    android:sharedUserId="android.uid.system"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+8-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:8:5-10:41
+9        android:minSdkVersion="17"
+9-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:9:9-35
+10        android:targetSdkVersion="34" />
+10-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:10:9-38
+11
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:12:5-68
+12-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:12:22-65
+13    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+13-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:13:5-72
+13-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:13:22-69
+14
+15    <application
+15-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:15:5-41:19
+16        android:allowBackup="true"
+16-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:16:9-35
+17        android:debuggable="true"
+18        android:icon="@drawable/ic_launcher"
+18-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:17:9-45
+19        android:label="@string/app_name"
+19-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:18:9-41
+20        android:theme="@style/AppTheme" >
+20-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:19:9-40
+21        <activity
+21-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:20:9-29:20
+22            android:name="com.adam.app.MainActivity"
+22-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:21:13-41
+23            android:exported="true"
+23-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:23:13-36
+24            android:label="@string/app_name" >
+24-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:22:13-45
+25            <intent-filter>
+25-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:24:13-28:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:25:17-69
+26-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:25:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:27:17-77
+28-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:27:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <service
+32-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:31:9-34:19
+33            android:name="com.adam.app.MyIntentService"
+33-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:32:13-44
+34            android:exported="false" >
+34-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:33:13-37
+35        </service>
+36
+37        <receiver
+37-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:36:9-40:20
+38            android:name="com.adam.app.MyReceiver"
+38-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:37:13-39
+39            android:enabled="true"
+39-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:38:13-35
+40            android:exported="true" >
+40-->E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml:39:13-36
+41        </receiver>
+42    </application>
+43
+44</manifest>

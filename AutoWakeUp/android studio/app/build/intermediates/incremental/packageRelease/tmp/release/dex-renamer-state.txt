@@ -1,0 +1,4 @@
+#Thu Sep 05 16:10:01 CST 2024
+base.0=E\:\\AndroidStudioProjects\\AutoWakeUp\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

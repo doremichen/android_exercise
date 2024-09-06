@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="incidents">
+
+    <incident
+        id="GradleOverrides"
+        severity="warning"
+        message="This `minSdkVersion` value (`14`) is not used; it is always overridden by the value specified in the Gradle build script (`14`)">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="8"
+            column="9"
+            startOffset="235"
+            endLine="8"
+            endColumn="35"
+            endOffset="261"/>
+    </incident>
+
+    <incident
+        id="GradleOverrides"
+        severity="warning"
+        message="This `targetSdkVersion` value (`17`) is not used; it is always overridden by the value specified in the Gradle build script (`33`)">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="9"
+            column="9"
+            startOffset="271"
+            endLine="9"
+            endColumn="38"
+            endOffset="300"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 34"
+            oldPattern="targetSdkVersion\s*=\s*[&quot;&apos;](.*)[&quot;&apos;]"
+            replacement="34"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="9"
+            column="9"
+            startOffset="271"
+            endLine="9"
+            endColumn="38"
+            endOffset="300"/>
+    </incident>
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="19"
+            column="13"
+            startOffset="633"
+            endLine="19"
+            endColumn="45"
+            endOffset="665"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Start Alarm&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="33"
+            column="9"
+            startOffset="1188"
+            endLine="33"
+            endColumn="35"
+            endOffset="1214"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v11`) is unnecessary; `minSdkVersion` is 14. Merge all the resources in this folder into `values`.">
+        <fix-data file="${:app*debug*sourceProvider*0*resDir*0}/values-v11" folderName="values" requiresApi="14"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values-v11"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v14`) is unnecessary; `minSdkVersion` is 14. Merge all the resources in this folder into `values`.">
+        <fix-data file="${:app*debug*sourceProvider*0*resDir*0}/values-v14" folderName="values" requiresApi="14"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values-v14"/>
+    </incident>
+
+    <incident
+        id="UnspecifiedImmutableFlag"
+        severity="warning"
+        message="Missing `PendingIntent` mutability flag">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/adam/app/alarmdemo/MainActivity.java"
+            line="135"
+            column="6"
+            startOffset="3476"
+            endLine="135"
+            endColumn="33"
+            endOffset="3503"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 34"
+            oldString="33"
+            replacement="34"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="10"
+            column="9"
+            startOffset="210"
+            endLine="10"
+            endColumn="21"
+            endOffset="222"/>
+    </incident>
+
+</incidents>

@@ -1,0 +1,8 @@
+com.adam.app.usbtest.app-pngs-0 E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\generated\res\pngs\release
+com.adam.app.usbtest.app-resValues-1 E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\generated\res\resValues\release
+com.adam.app.usbtest.app-rs-2 E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\generated\res\rs\release
+com.adam.app.usbtest.app-mergeReleaseResources-3 E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.adam.app.usbtest.app-mergeReleaseResources-4 E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.adam.app.usbtest.app-merged_res-5 E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\merged_res\release
+com.adam.app.usbtest.app-main-6 E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\src\main\res
+com.adam.app.usbtest.app-release-7 E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\src\release\res

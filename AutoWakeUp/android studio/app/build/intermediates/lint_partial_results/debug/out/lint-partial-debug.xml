@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="partial_results">
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="dimen[activity_vertical_margin(U),activity_horizontal_margin(U)],drawable[ic_launcher(U)],id[action_settings(U),layout_button(D),duration(U),edit_duration(U)],layout[activity_main(U)],menu[main(U)],string[action_settings(U),duration_input_lable(U),start_lable(U),app_name(U),stop_lable(U),hello_world(D)],style[AppBaseTheme(U),AppTheme(U)];7^0^1^a^5^b^d,8^9,10^f;;;"/>
+        <location id="R.string.hello_world"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="5"
+            column="13"
+            startOffset="126"
+            endLine="5"
+            endColumn="31"
+            endOffset="144"/>
+    </map>
+
+</incidents>

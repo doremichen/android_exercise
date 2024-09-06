@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.adam.app.appstartup.app-mergeReleaseResources-3:/values/values.xml",
+            "map": [
+                {
+                    "source": "E:\\AndroidStudioProjects\\AppStartUp\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "6,5,3,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "216,162,59,108",
+                        "endColumns": "56,52,47,52",
+                        "endOffsets": "268,210,102,156"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "169,226,279,327",
+                        "endColumns": "56,52,47,52",
+                        "endOffsets": "221,274,322,375"
+                    }
+                },
+                {
+                    "source": "E:\\AndroidStudioProjects\\AppStartUp\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "192,525",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "484,682"
+                    },
+                    "to": {
+                        "startLines": "8,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "380,463",
+                        "endLines": "10,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "458,530"
+                    }
+                },
+                {
+                    "source": "E:\\AndroidStudioProjects\\AppStartUp\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "92,151",
+                        "endColumns": "57,55",
+                        "endOffsets": "145,202"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                }
+            ]
+        }
+    ]
+}

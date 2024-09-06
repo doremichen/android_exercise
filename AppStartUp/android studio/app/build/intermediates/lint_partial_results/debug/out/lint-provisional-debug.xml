@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="conditional_incidents">
+
+    <incident
+        id="IntentFilterExportedReceiver"
+        severity="warning"
+        message="As of Android 12, `android:exported` must be set; use `true` to make the activity \&#xA;available to other apps, and `false` otherwise.">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set exported=&quot;true&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="exported"
+                value="true"/>
+            <fix-attribute
+                description="Set exported=&quot;false&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="exported"
+                value="false"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="20"
+            column="10"
+            startOffset="635"
+            endLine="20"
+            endColumn="18"
+            endOffset="643"/>
+    </incident>
+
+    <incident
+        id="ExpiredTargetSdkVersion"
+        severity="fatal"
+        message="Google Play requires that apps target API level 31 or higher.&#xA;">
+        <fix-replace
+            description="Update targetSdkVersion to 34"
+            oldString="17"
+            replacement="34"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="10"
+            column="9"
+            startOffset="218"
+            endLine="10"
+            endColumn="28"
+            endOffset="237"/>
+    </incident>
+
+</incidents>

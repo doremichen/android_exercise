@@ -1,0 +1,8 @@
+com.adam.app.appstartup.app-pngs-0 E:\AndroidStudioProjects\AppStartUp\app\build\generated\res\pngs\debug
+com.adam.app.appstartup.app-resValues-1 E:\AndroidStudioProjects\AppStartUp\app\build\generated\res\resValues\debug
+com.adam.app.appstartup.app-rs-2 E:\AndroidStudioProjects\AppStartUp\app\build\generated\res\rs\debug
+com.adam.app.appstartup.app-mergeDebugResources-3 E:\AndroidStudioProjects\AppStartUp\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.adam.app.appstartup.app-mergeDebugResources-4 E:\AndroidStudioProjects\AppStartUp\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.adam.app.appstartup.app-merged_res-5 E:\AndroidStudioProjects\AppStartUp\app\build\intermediates\merged_res\debug
+com.adam.app.appstartup.app-debug-6 E:\AndroidStudioProjects\AppStartUp\app\src\debug\res
+com.adam.app.appstartup.app-main-7 E:\AndroidStudioProjects\AppStartUp\app\src\main\res

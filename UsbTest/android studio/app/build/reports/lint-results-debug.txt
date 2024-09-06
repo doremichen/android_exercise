@@ -1,0 +1,76 @@
+E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build.gradle:25: Error: Version 28 (intended for Android Pie and below) is the last version of the legacy support library, so we recommend that you migrate to AndroidX libraries when using Android Q and moving forward. The IDE can help with this: Refactor > Migrate to AndroidX... [GradleCompatible]
+    implementation 'com.android.support:support-v4:18.0.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleCompatible":
+   There are some combinations of libraries, or tools and libraries, that are
+   incompatible, or can lead to bugs. One such incompatibility is compiling
+   with a version of the Android support libraries that is not the latest
+   version (or in particular, a version lower than your targetSdkVersion).
+
+E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\src\main\AndroidManifest.xml:9: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        android:targetSdkVersion="17" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\src\main\res\menu\main.xml:6: Warning: Attribute showAsAction is only used in API level 11 and higher (current min is 8) [UnusedAttribute]
+        android:showAsAction="never"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedAttribute":
+   This check finds attributes set in XML files that were introduced in a
+   version newer than the oldest version targeted by your application (with
+   the minSdkVersion attribute).
+
+   This is not an error; the application will simply ignore the attribute.
+   However, if the attribute is important to the appearance or functionality
+   of your application, you should consider finding an alternative way to
+   achieve the same result with only available attributes, and then you can
+   optionally create a copy of the layout in a layout-vNN folder which will be
+   used on API NN or higher where you can take advantage of the newer
+   attribute.
+
+   Note: This check does not only apply to attributes. For example, some tags
+   can be unused too, such as the new <tag> element in layouts introduced in
+   API 21.
+
+E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\src\main\AndroidManifest.xml:18: Warning: Redundant label can be removed [RedundantLabel]
+            android:label="@string/app_name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RedundantLabel":
+   When an activity does not have a label attribute, it will use the one from
+   the application tag. Since the application has already specified the same
+   label, the label on this activity can be omitted.
+
+E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\src\main\AndroidManifest.xml:8: Warning: This minSdkVersion value (8) is not used; it is always overridden by the value specified in the Gradle build script (8) [GradleOverrides]
+        android:minSdkVersion="8"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\src\main\AndroidManifest.xml:9: Warning: This targetSdkVersion value (17) is not used; it is always overridden by the value specified in the Gradle build script (34) [GradleOverrides]
+        android:targetSdkVersion="17" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleOverrides":
+   The value of (for example) minSdkVersion is only used if it is not
+   specified in the build.gradle build scripts. When specified in the Gradle
+   build scripts, the manifest value is ignored and can be misleading, so
+   should be removed to avoid ambiguity.
+
+1 errors, 5 warnings

@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion "34.0.0"
+
+    defaultConfig {
+        applicationId "com.adam.app.androidlistdemo"
+        minSdkVersion 8
+        targetSdkVersion 16
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:18.0.0'
+}

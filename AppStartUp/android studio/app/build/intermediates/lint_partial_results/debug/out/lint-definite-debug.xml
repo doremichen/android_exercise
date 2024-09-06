@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="incidents">
+
+    <incident
+        id="Deprecated"
+        severity="warning"
+        message="Consider removing `sharedUserId` for new users by adding `android:sharedUserMaxSdkVersion=&quot;32&quot;` to your manifest. See https://developer.android.com/guide/topics/manifest/manifest-element for details.">
+        <fix-attribute
+            description="Set sharedUserMaxSdkVersion=&quot;32&quot;"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="sharedUserMaxSdkVersion"
+            value="32"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="6"
+            column="5"
+            startOffset="214"
+            endLine="6"
+            endColumn="46"
+            endOffset="255"/>
+    </incident>
+
+    <incident
+        id="GradleOverrides"
+        severity="warning"
+        message="This `minSdkVersion` value (`17`) is not used; it is always overridden by the value specified in the Gradle build script (`17`)">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="9"
+            column="9"
+            startOffset="283"
+            endLine="9"
+            endColumn="35"
+            endOffset="309"/>
+    </incident>
+
+    <incident
+        id="GradleOverrides"
+        severity="warning"
+        message="This `targetSdkVersion` value (`17`) is not used; it is always overridden by the value specified in the Gradle build script (`17`)">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="10"
+            column="9"
+            startOffset="319"
+            endLine="10"
+            endColumn="38"
+            endOffset="348"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 34"
+            oldPattern="targetSdkVersion\s*=\s*[&quot;&apos;](.*)[&quot;&apos;]"
+            replacement="34"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="10"
+            column="9"
+            startOffset="319"
+            endLine="10"
+            endColumn="38"
+            endOffset="348"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v11`) is unnecessary; `minSdkVersion` is 17. Merge all the resources in this folder into `values`.">
+        <fix-data file="${:app*debug*sourceProvider*0*resDir*0}/values-v11" folderName="values" requiresApi="17"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values-v11"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v14`) is unnecessary; `minSdkVersion` is 17. Merge all the resources in this folder into `values`.">
+        <fix-data file="${:app*debug*sourceProvider*0*resDir*0}/values-v14" folderName="values" requiresApi="17"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values-v14"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.android.support:support-v4 than 18.0.0 is available: 28.0.0">
+        <fix-replace
+            description="Change to 28.0.0"
+            family="Update versions"
+            oldString="18.0.0"
+            replacement="28.0.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="25"
+            column="20"
+            startOffset="519"
+            endLine="25"
+            endColumn="59"
+            endOffset="558"/>
+    </incident>
+
+</incidents>

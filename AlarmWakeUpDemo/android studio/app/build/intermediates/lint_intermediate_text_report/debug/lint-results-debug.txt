@@ -1,0 +1,103 @@
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:9: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        android:targetSdkVersion="17" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\build.gradle:10: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 33
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:19: Warning: Redundant label can be removed [RedundantLabel]
+            android:label="@string/app_name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RedundantLabel":
+   When an activity does not have a label attribute, it will use the one from
+   the application tag. Since the application has already specified the same
+   label, the label on this activity can be omitted.
+
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:8: Warning: This minSdkVersion value (14) is not used; it is always overridden by the value specified in the Gradle build script (14) [GradleOverrides]
+        android:minSdkVersion="14"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:9: Warning: This targetSdkVersion value (17) is not used; it is always overridden by the value specified in the Gradle build script (33) [GradleOverrides]
+        android:targetSdkVersion="17" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleOverrides":
+   The value of (for example) minSdkVersion is only used if it is not
+   specified in the build.gradle build scripts. When specified in the Gradle
+   build scripts, the manifest value is ignored and can be misleading, so
+   should be removed to avoid ambiguity.
+
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\java\com\adam\app\alarmdemo\MainActivity.java:135: Warning: Missing PendingIntent mutability flag [UnspecifiedImmutableFlag]
+     PendingIntent.FLAG_ONE_SHOT);
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnspecifiedImmutableFlag":
+   Apps targeting Android 12 and higher must specify either FLAG_IMMUTABLE or
+   FLAG_MUTABLE when constructing a PendingIntent.
+
+   https://developer.android.com/about/versions/12/behavior-changes-12#pending-intent-mutability
+
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\res\values-v11: Warning: This folder configuration (v11) is unnecessary; minSdkVersion is 14. Merge all the resources in this folder into values. [ObsoleteSdkInt]
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\res\values-v14: Warning: This folder configuration (v14) is unnecessary; minSdkVersion is 14. Merge all the resources in this folder into values. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\res\layout\activity_main.xml:18: Warning: Missing accessibility label: where minSdk < 17, you should provide an android:hint [LabelFor]
+    <EditText
+     ~~~~~~~~
+
+   Explanation for issues of type "LabelFor":
+   Editable text fields should provide an android:hint or, provided your
+   minSdkVersion is at least 17, they may be referenced by a view with a
+   android:labelFor attribute.
+
+   When using android:labelFor, be sure to provide an android:text or an
+   android:contentDescription.
+
+   If your view is labeled but by a label in a different layout which includes
+   this one, just suppress this warning from lint.
+
+E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\res\layout\activity_main.xml:33: Warning: Hardcoded string "Start Alarm", should use @string resource [HardcodedText]
+        android:text="Start Alarm" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 10 warnings

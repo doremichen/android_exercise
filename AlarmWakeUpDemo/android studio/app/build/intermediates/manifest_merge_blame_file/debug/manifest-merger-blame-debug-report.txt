@@ -1,0 +1,54 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.adam.app.alarmdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:7:5-9:41
+8        android:minSdkVersion="14"
+8-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:8:9-35
+9        android:targetSdkVersion="33" />
+9-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:9:9-38
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:10:5-67
+11-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:10:22-65
+12
+13    <application
+13-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:12:5-28:19
+14        android:allowBackup="true"
+14-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:13:9-35
+15        android:debuggable="true"
+16        android:icon="@drawable/ic_launcher"
+16-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:14:9-45
+17        android:label="@string/app_name"
+17-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:15:9-41
+18        android:theme="@style/AppTheme" >
+18-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:16:9-40
+19        <activity
+19-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:17:9-26:20
+20            android:name="com.adam.app.alarmdemo.MainActivity"
+20-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:18:13-41
+21            android:exported="true"
+21-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:20:13-36
+22            android:label="@string/app_name" >
+22-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:19:13-45
+23            <intent-filter>
+23-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:21:13-25:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:22:17-69
+24-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:22:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:24:17-77
+26-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:24:27-74
+27            </intent-filter>
+28        </activity>
+29
+30        <receiver android:name="com.adam.app.alarmdemo.DemoReceiver" />
+30-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:27:9-58
+30-->E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\AndroidManifest.xml:27:19-46
+31    </application>
+32
+33</manifest>

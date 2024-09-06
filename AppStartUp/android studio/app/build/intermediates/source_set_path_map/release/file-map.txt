@@ -1,0 +1,8 @@
+com.adam.app.appstartup.app-pngs-0 E:\AndroidStudioProjects\AppStartUp\app\build\generated\res\pngs\release
+com.adam.app.appstartup.app-resValues-1 E:\AndroidStudioProjects\AppStartUp\app\build\generated\res\resValues\release
+com.adam.app.appstartup.app-rs-2 E:\AndroidStudioProjects\AppStartUp\app\build\generated\res\rs\release
+com.adam.app.appstartup.app-mergeReleaseResources-3 E:\AndroidStudioProjects\AppStartUp\app\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.adam.app.appstartup.app-mergeReleaseResources-4 E:\AndroidStudioProjects\AppStartUp\app\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.adam.app.appstartup.app-merged_res-5 E:\AndroidStudioProjects\AppStartUp\app\build\intermediates\merged_res\release
+com.adam.app.appstartup.app-main-6 E:\AndroidStudioProjects\AppStartUp\app\src\main\res
+com.adam.app.appstartup.app-release-7 E:\AndroidStudioProjects\AppStartUp\app\src\release\res

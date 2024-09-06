@@ -1,0 +1,132 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.adam.app.androidlistdemo.app-merged_res-5:/values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\AndroidStudioProjects\\AndroidListDemo\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "183",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "317"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "138"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.adam.app.androidlistdemo.app-merged_res-5:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\AndroidStudioProjects\\AndroidListDemo\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,5,7,8,6,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "113,59,167,281,337,221,396",
+                        "endColumns": "52,52,52,54,57,58,56",
+                        "endOffsets": "161,107,215,331,390,275,448"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "169,222,275,328,383,441,500",
+                        "endColumns": "52,52,52,54,57,58,56",
+                        "endOffsets": "217,270,323,378,436,495,552"
+                    }
+                },
+                {
+                    "source": "E:\\AndroidStudioProjects\\AndroidListDemo\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "92,151",
+                        "endColumns": "57,55",
+                        "endOffsets": "145,202"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                },
+                {
+                    "source": "E:\\AndroidStudioProjects\\AndroidListDemo\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "192,525",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "484,682"
+                    },
+                    "to": {
+                        "startLines": "11,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "557,640",
+                        "endLines": "13,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "635,707"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.adam.app.androidlistdemo.app-merged_res-5:/values-sw720dp-land-v13_values-sw720dp-land-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\AndroidStudioProjects\\AndroidListDemo\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "206",
+                        "endColumns": "58",
+                        "endOffsets": "260"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.adam.app.androidlistdemo.app-merged_res-5:/values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\AndroidStudioProjects\\AndroidListDemo\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "227",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "375"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "152"
+                    }
+                }
+            ]
+        }
+    ]
+}

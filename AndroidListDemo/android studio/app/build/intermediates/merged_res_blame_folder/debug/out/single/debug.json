@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_asyntask_layout.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/asyntask_layout.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/drawable-mdpi_ic_launcher.png.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/raw_test.txt.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/raw/test.txt"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_handlertest_layout.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/handlertest_layout.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_list_item2.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/list_item2.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_button_layout.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/button_layout.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/drawable-hdpi_ic_launcher.png.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_custbutton_layout.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/custbutton_layout.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/menu_main.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/menu/main.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_custimageview_layout.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/custimageview_layout.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_dlg_layout.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/dlg_layout.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_canvas_view_layout.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/canvas_view_layout.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_list_item.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/list_item.xml"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/drawable_ball.png.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/drawable/ball.png"
+    },
+    {
+        "merged": "com.adam.app.androidlistdemo.app-merged_res-5:/layout_activity_main.xml.flat",
+        "source": "com.adam.app.androidlistdemo.app-main-7:/layout/activity_main.xml"
+    }
+]

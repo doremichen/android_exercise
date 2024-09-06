@@ -1,0 +1,17 @@
+<dependencies>
+  <compile
+      roots="E:\AndroidStudioProjects\AppStartUp@@:app::debug,com.android.support:support-v4:18.0.0@jar">
+    <dependency
+        name="E:\AndroidStudioProjects\AppStartUp@@:app::debug"
+        simpleName=":"/>
+    <dependency
+        name="com.android.support:support-v4:18.0.0@jar"
+        simpleName="com.android.support:support-v4"/>
+  </compile>
+  <package
+      roots="com.android.support:support-v4:18.0.0@jar">
+    <dependency
+        name="com.android.support:support-v4:18.0.0@jar"
+        simpleName="com.android.support:support-v4"/>
+  </package>
+</dependencies>

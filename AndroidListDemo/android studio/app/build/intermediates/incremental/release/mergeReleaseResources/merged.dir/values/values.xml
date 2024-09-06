@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">AndroidListDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="str_btn_download">Down Load</string>
+    <string name="str_btn_load_web">Load Webpage</string>
+    <string name="str_canvas_view">Test Test Test</string>
+    <string name="str_tv_load_web">Example Text</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+</resources>

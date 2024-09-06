@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.0" type="partial_results">
+    <map id="UnusedResources">
+        <location id="R.layout.list_item2"
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/list_item2.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="13"
+            endColumn="16"
+            endOffset="411"/>
+        <location id="R.layout.list_item"
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/list_item.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="25"
+            endColumn="16"
+            endOffset="788"/>
+        <entry
+            name="model"
+            string="dimen[activity_vertical_margin(D),activity_horizontal_margin(D)],drawable[ball(U),ic_launcher(U)],id[btn_load_web(U),tv(U),imgic(U),call_button(D),action_settings(D),phone_textview(D),cust_btn(U),list(D),iv(U),dlg_btn1(U),shadeTextView(D),my_imageview(U),btn_download(U),name_textview(D),tv_load_web(U)],layout[handlertest_layout(U),custbutton_layout(U),button_layout(U),custimageview_layout(U),list_item(D),activity_main(D),canvas_view_layout(U),dlg_layout(U),asyntask_layout(U),list_item2(D)],menu[main(U)],raw[test(U)],string[str_canvas_view(U),action_settings(U),app_name(U),hello_world(D),str_tv_load_web(U),str_btn_load_web(U),str_btn_download(U)],style[AppBaseTheme(U),AppTheme(U)];13^25^3,16^2,18^0^1^22,19^1f,1b^24^23,1d^20,27^26;;;"/>
+        <location id="R.layout.activity_main"
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="1"
+            column="1"
+            startOffset="0"
+            endLine="16"
+            endColumn="18"
+            endOffset="664"/>
+        <location id="R.dimen.activity_horizontal_margin"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/dimens.xml"
+            line="4"
+            column="12"
+            startOffset="99"
+            endLine="4"
+            endColumn="45"
+            endOffset="132"/>
+        <location id="R.string.hello_world"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="6"
+            column="13"
+            startOffset="175"
+            endLine="6"
+            endColumn="31"
+            endOffset="193"/>
+        <location id="R.dimen.activity_vertical_margin"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/dimens.xml"
+            line="5"
+            column="12"
+            startOffset="158"
+            endLine="5"
+            endColumn="43"
+            endOffset="189"/>
+    </map>
+
+</incidents>

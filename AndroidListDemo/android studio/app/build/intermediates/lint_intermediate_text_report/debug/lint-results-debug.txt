@@ -1,0 +1,328 @@
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\CustBtnMain.java:50: Warning: Using internal inset dimension resource status_bar_height is not supported [InternalInsetResource]
+    int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "InternalInsetResource":
+   The internal inset dimension resources are not a supported way to retrieve
+   the relevant insets for your application. The insets are dynamic values
+   that can change while your app is visible, and your app's window may not
+   intersect with the system UI. To get the relevant value for your app and
+   listen to updates, use androidx.core.view.WindowInsetsCompat and related
+   APIs.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:9: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        android:targetSdkVersion="16" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\AsyncTaskTest.java:46: Warning: Resource IDs will be non-final by default in Android Gradle Plugin version 8.0, avoid using them in switch case statements [NonConstantResourceId]
+  case R.id.btn_load_web:
+       ~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\DialogDemo.java:46: Warning: Resource IDs will be non-final by default in Android Gradle Plugin version 8.0, avoid using them in switch case statements [NonConstantResourceId]
+  case R.id.dlg_btn1:
+       ~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\HandlerTest.java:99: Warning: Resource IDs will be non-final by default in Android Gradle Plugin version 8.0, avoid using them in switch case statements [NonConstantResourceId]
+  case R.id.btn_download:
+       ~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NonConstantResourceId":
+   Avoid the usage of resource IDs where constant expressions are required.
+
+   A future version of the Android Gradle Plugin will generate R classes with
+   non-constant IDs in order to improve the performance of incremental
+   compilation.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:11: Warning: Redundant label can be removed [RedundantLabel]
+        <activity android:name="com.adam.app.androidlistdemo.MainActivity" android:label="@string/app_name"
+                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RedundantLabel":
+   When an activity does not have a label attribute, it will use the one from
+   the application tag. Since the application has already specified the same
+   label, the label on this activity can be omitted.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\build.gradle:25: Warning: A newer version of com.android.support:support-v4 than 18.0.0 is available: 28.0.0 [GradleDependency]
+    implementation 'com.android.support:support-v4:18.0.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:8: Warning: This minSdkVersion value (8) is not used; it is always overridden by the value specified in the Gradle build script (8) [GradleOverrides]
+        android:minSdkVersion="8"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\AndroidManifest.xml:9: Warning: This targetSdkVersion value (16) is not used; it is always overridden by the value specified in the Gradle build script (16) [GradleOverrides]
+        android:targetSdkVersion="16" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleOverrides":
+   The value of (for example) minSdkVersion is only used if it is not
+   specified in the build.gradle build scripts. When specified in the Gradle
+   build scripts, the manifest value is ignored and can be misleading, so
+   should be removed to avoid ambiguity.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\CustBtnMain.java:50: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+    int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+                                    ~~~~~~~~~~~~~
+
+   Explanation for issues of type "DiscouragedApi":
+   Discouraged APIs are allowed and are not deprecated, but they may be unfit
+   for common use (e.g. due to slow performance or subtle behavior).
+
+E:\AndroidStudioProjects\AndroidListDemo\app\build.gradle:10: Error: Google Play requires that apps target API level 31 or higher.
+ [ExpiredTargetSdkVersion]
+        targetSdkVersion 16
+        ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ExpiredTargetSdkVersion":
+   As of the second half of 2018, Google Play requires that new apps and app
+   updates target API level 26 or higher.
+
+   Configuring your app to target a recent API level ensures that users
+   benefit from significant security and performance improvements, while still
+   allowing your app to run on older Android versions (down to the
+   minSdkVersion).
+
+   To update your targetSdkVersion, follow the steps from "Meeting Google Play
+   requirements for target API level",
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://support.google.com/googleplay/android-developer/answer/113469#targetsdk
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\MyImageView.java:47: Warning: Avoid object allocations during draw operations: Use Canvas.getClipBounds(Rect) instead of Canvas.getClipBounds() which allocates a temporary Rect [DrawAllocation]
+  Rect rect = canvas.getClipBounds();
+              ~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\MyImageView.java:51: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+  Paint paint = new Paint();
+                ~~~~~~~~~~~
+
+   Explanation for issues of type "DrawAllocation":
+   You should avoid allocating objects during a drawing or layout operation.
+   These are called frequently, so a smooth UI can be interrupted by garbage
+   collection pauses caused by the object allocations.
+
+   The way this is generally handled is to allocate the needed objects up
+   front and to reuse them for each drawing operation.
+
+   Some methods allocate memory on your behalf (such as Bitmap.create), and
+   these should be handled in the same way.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\AsyncTaskTest.java:55: Warning: This AsyncTask class should be static or leaks might occur (com.adam.app.androidlistdemo.AsyncTaskTest.DownLoadWebPageTask) [StaticFieldLeak]
+ private class DownLoadWebPageTask extends AsyncTask<String, Void, String> {
+               ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "StaticFieldLeak":
+   A static field will leak contexts.
+
+   Non-static inner classes have an implicit reference to their outer class.
+   If that outer class is for example a Fragment or Activity, then this
+   reference means that the long-running handler/loader/task will hold a
+   reference to the activity which prevents it from getting garbage
+   collected.
+
+   Similarly, direct field references to activities and fragments from these
+   longer running instances can cause leaks.
+
+   ViewModel classes should never point to Views or non-application Contexts.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\button_layout.xml:2: Warning: This tag and its children can be replaced by one <TextView/> and a compound drawable [UseCompoundDrawables]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ ~~~~~~~~~~~~
+
+   Explanation for issues of type "UseCompoundDrawables":
+   A LinearLayout which contains an ImageView and a TextView can be more
+   efficiently handled as a compound drawable (a single TextView, using the
+   drawableTop, drawableLeft, drawableRight and/or drawableBottom attributes
+   to draw one or more images adjacent to the text).
+
+   If the two widgets are offset from each other with margins, this can be
+   replaced with a drawablePadding attribute.
+
+   There's a lint quickfix to perform this conversion in the Eclipse plugin.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\HandlerTest.java:41: Warning: This Handler class should be static or leaks might occur (anonymous android.os.Handler) [HandlerLeak]
+ private Handler mHandler = new Handler() {
+                            ^
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\URLTest.java:31: Warning: This Handler class should be static or leaks might occur (com.adam.app.androidlistdemo.URLTest.CustHandler) [HandlerLeak]
+ public class CustHandler extends Handler {
+              ~~~~~~~~~~~
+
+   Explanation for issues of type "HandlerLeak":
+   Since this Handler is declared as an inner class, it may prevent the outer
+   class from being garbage collected. If the Handler is using a Looper or
+   MessageQueue for a thread other than the main thread, then there is no
+   issue. If the Handler is using the Looper or MessageQueue of the main
+   thread, you need to fix your Handler declaration, as follows: Declare the
+   Handler as a static class; In the outer class, instantiate a WeakReference
+   to the outer class and pass this object to your Handler when you
+   instantiate the Handler; Make all references to members of the outer class
+   using the WeakReference object.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\activity_main.xml:1: Warning: The resource R.layout.activity_main appears to be unused [UnusedResources]
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\values\dimens.xml:4: Warning: The resource R.dimen.activity_horizontal_margin appears to be unused [UnusedResources]
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\values\dimens.xml:5: Warning: The resource R.dimen.activity_vertical_margin appears to be unused [UnusedResources]
+    <dimen name="activity_vertical_margin">16dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\list_item.xml:2: Warning: The resource R.layout.list_item appears to be unused [UnusedResources]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\list_item2.xml:2: Warning: The resource R.layout.list_item2 appears to be unused [UnusedResources]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\values\strings.xml:6: Warning: The resource R.string.hello_world appears to be unused [UnusedResources]
+    <string name="hello_world">Hello world!</string>
+            ~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\drawable\ball.png: Warning: Found bitmap drawable res/drawable/ball.png in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\button_layout.xml:7: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\handlertest_layout.xml:13: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, just suppress the lint
+   warning with a tools:ignore="ContentDescription" attribute.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\ParcelableActivity1.java:24: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+  myButton.setText("Press me...");
+                   ~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\java\com\adam\app\androidlistdemo\ParcelableActivity2.java:22: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+  text.setText("Hello Adam...");
+               ~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\button_layout.xml:22: Warning: Hardcoded string "TextView", should use @string resource [HardcodedText]
+        android:text="TextView"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\dlg_layout.xml:11: Warning: Hardcoded string "Button", should use @string resource [HardcodedText]
+        android:text="Button" />
+        ~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\list_item.xml:11: Warning: Hardcoded string "TextView", should use @string resource [HardcodedText]
+        android:text="TextView" />
+        ~~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\list_item.xml:17: Warning: Hardcoded string "TextView", should use @string resource [HardcodedText]
+        android:text="TextView" />
+        ~~~~~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\list_item.xml:23: Warning: Hardcoded string "Call", should use @string resource [HardcodedText]
+        android:text="Call" />
+        ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\button_layout.xml:13: Warning: Consider adding android:paddingStart="20dp" to better support right-to-left layouts [RtlHardcoded]
+        android:paddingLeft="20dp"
+        ~~~~~~~~~~~~~~~~~~~
+E:\AndroidStudioProjects\AndroidListDemo\app\src\main\res\layout\button_layout.xml:21: Warning: Consider adding android:layout_marginStart="8dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="8dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RtlHardcoded":
+   Using Gravity#LEFT and Gravity#RIGHT can lead to problems when a layout is
+   rendered in locales where text flows from right to left. Use Gravity#START
+   and Gravity#END instead. Similarly, in XML gravity and layout_gravity
+   attributes, use start rather than left.
+
+   For XML attributes such as paddingLeft and layout_marginLeft, use
+   paddingStart and layout_marginStart. NOTE: If your minSdkVersion is less
+   than 17, you should add both the older left/right attributes as well as the
+   new start/end attributes. On older platforms, where RTL is not supported
+   and the start/end attributes are unknown and therefore ignored, you need
+   the older left/right attributes. There is a separate lint check which
+   catches that type of error.
+
+   (Note: For Gravity#LEFT and Gravity#START, you can use these constants even
+   when targeting older platforms, because the start bitmask is a superset of
+   the left bitmask. Therefore, you can use gravity="start" rather than
+   gravity="left|start".)
+
+1 errors, 34 warnings

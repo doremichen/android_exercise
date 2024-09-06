@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="E:\AndroidStudioProjects\AndroidListDemo\app"
+    name=":app"
+    type="APP"
+    maven="AndroidListDemo:app:"
+    gradle="7.4.0"
+    buildFolder="build"
+    bootClassPath="C:\Users\AdamChen\AppData\Local\Android\Sdk\platforms\android-16\android.jar;C:\Users\AdamChen\AppData\Local\Android\Sdk\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-16"
+    neverShrinking="true">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

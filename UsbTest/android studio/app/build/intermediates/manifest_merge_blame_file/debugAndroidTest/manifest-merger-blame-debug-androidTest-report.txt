@@ -1,0 +1,32 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.adam.app.usbtest.test" >
+4
+5    <uses-sdk
+5-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:5:5-73
+6        android:minSdkVersion="8"
+6-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:5:15-40
+7        android:targetSdkVersion="34" />
+7-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:5:41-70
+8
+9    <instrumentation
+9-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:11:5-15:70
+10        android:name="android.test.InstrumentationTestRunner"
+10-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:11:22-75
+11        android:functionalTest="false"
+11-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:14:22-52
+12        android:handleProfiling="false"
+12-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:13:22-53
+13        android:label="Tests for com.adam.app.usbtest"
+13-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:15:22-68
+14        android:targetPackage="com.adam.app.usbtest" />
+14-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:12:22-66
+15
+16    <application android:debuggable="true" >
+16-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:7:5-9:19
+17        <uses-library android:name="android.test.runner" />
+17-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:8:9-60
+17-->E:\GitWorkSpace\android_exercise\UsbTest\android studio\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16074951251352777100.xml:8:23-57
+18    </application>
+19
+20</manifest>

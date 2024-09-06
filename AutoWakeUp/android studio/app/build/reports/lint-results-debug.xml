@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.4.2">
+
+    <issue
+        id="GradleCompatible"
+        severity="Fatal"
+        message="Version 28 (intended for Android Pie and below) is the last version of the legacy support library, so we recommend that you migrate to AndroidX libraries when using Android Q and moving forward. The IDE can help with this: Refactor > Migrate to AndroidX..."
+        category="Correctness"
+        priority="8"
+        summary="Incompatible Gradle Versions"
+        explanation="There are some combinations of libraries, or tools and libraries, that are incompatible, or can lead to bugs. One such incompatibility is compiling with a version of the Android support libraries that is not the latest version (or in particular, a version lower than your `targetSdkVersion`)."
+        errorLine1="    implementation &apos;com.android.support:support-v4:18.0.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\build.gradle"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="InvalidWakeLockTag"
+        severity="Error"
+        message="Tag name should use a unique prefix followed by a colon (found MyLock). For instance `myapp:mywakelocktag`. This will help with debugging"
+        category="Correctness"
+        priority="6"
+        summary="Invalid Wake Lock Tag"
+        explanation="Wake Lock tags must follow the naming conventions defined in the`PowerManager` documentation."
+        url="https://developer.android.com/reference/android/os/PowerManager.html"
+        urls="https://developer.android.com/reference/android/os/PowerManager.html"
+        errorLine1="            PowerManager.WakeLock wl = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK"
+        errorLine2="                                       ^">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\java\com\adam\app\Utils.java"
+            line="81"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.&#xA;&#xA;To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:&#xA;https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        url="https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        urls="https://developer.android.com/distribute/best-practices/develop/target-sdk.html,https://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        android:targetSdkVersion=&quot;17&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ProtectedPermissions"
+        severity="Error"
+        message="Permission is only granted to system apps"
+        category="Correctness"
+        priority="5"
+        summary="Using system app permission"
+        explanation="Permissions with the protection level `signature`, `privileged` or `signatureOrSystem` are only granted to system apps. If an app is a regular non-system app, it will never be able to use these permissions."
+        errorLine1="    &lt;uses-permission android:name=&quot;android.permission.INJECT_EVENTS&quot; />"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml"
+            line="13"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        severity="Warning"
+        message="Redundant label can be removed"
+        category="Correctness"
+        priority="5"
+        summary="Redundant label on activity"
+        explanation="When an activity does not have a label attribute, it will use the one from the application tag. Since the application has already specified the same label, the label on this activity can be omitted."
+        errorLine1="            android:label=&quot;@string/app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `minSdkVersion` value (`17`) is not used; it is always overridden by the value specified in the Gradle build script (`17`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="        android:minSdkVersion=&quot;17&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This `targetSdkVersion` value (`17`) is not used; it is always overridden by the value specified in the Gradle build script (`34`)"
+        category="Correctness"
+        priority="4"
+        summary="Value overridden by Gradle build script"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="        android:targetSdkVersion=&quot;17&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Deprecated"
+        severity="Warning"
+        message="Consider removing `sharedUserId` for new users by adding `android:sharedUserMaxSdkVersion=&quot;32&quot;` to your manifest. See https://developer.android.com/guide/topics/manifest/manifest-element for details."
+        category="Correctness"
+        priority="2"
+        summary="Using deprecated resources"
+        explanation="Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You&apos;ve been warned."
+        errorLine1="    android:sharedUserId=&quot;android.uid.system&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ExportedReceiver"
+        severity="Warning"
+        message="Exported receiver does not require permission"
+        category="Security"
+        priority="5"
+        summary="Receiver does not require permission"
+        explanation="Exported receivers (receivers which either set `exported=true` or contain an intent-filter and do not specify `exported=false`) should define a permission that an entity must have in order to launch the receiver or bind to it. Without this, any application can use this receiver."
+        errorLine1="        &lt;receiver"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\AndroidManifest.xml"
+            line="36"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnspecifiedImmutableFlag"
+        severity="Warning"
+        message="Missing `PendingIntent` mutability flag"
+        category="Security"
+        priority="5"
+        summary="Missing `PendingIntent` mutability flag"
+        explanation="Apps targeting Android 12 and higher must specify either `FLAG_IMMUTABLE` or `FLAG_MUTABLE` when constructing a `PendingIntent`."
+        url="https://developer.android.com/about/versions/12/behavior-changes-12#pending-intent-mutability"
+        urls="https://developer.android.com/about/versions/12/behavior-changes-12#pending-intent-mutability"
+        errorLine1="        mPendingIntent = PendingIntent.getBroadcast(ctx, 0, it, PendingIntent.FLAG_UPDATE_CURRENT);"
+        errorLine2="                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\java\com\adam\app\Test.java"
+            line="30"
+            column="65"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="This folder configuration (`v11`) is unnecessary; `minSdkVersion` is 17. Merge all the resources in this folder into `values`."
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder.">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\res\values-v11"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="This folder configuration (`v14`) is unnecessary; `minSdkVersion` is 17. Merge all the resources in this folder into `values`."
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder.">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\res\values-v14"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.hello_world` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;hello_world&quot;>Hello world!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\res\values\strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        severity="Warning"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`"
+        category="Accessibility"
+        priority="2"
+        summary="Missing accessibility label"
+        explanation="Editable text fields should provide an `android:hint` or, provided your `minSdkVersion` is at least 17, they may be referenced by a view with a `android:labelFor` attribute.&#xA;&#xA;When using `android:labelFor`, be sure to provide an `android:text` or an `android:contentDescription`.&#xA;&#xA;If your view is labeled but by a label in a different layout which includes this one, just suppress this warning from lint."
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="E:\AndroidStudioProjects\AutoWakeUp\app\src\main\res\layout\activity_main.xml"
+            line="18"
+            column="6"/>
+    </issue>
+
+</issues>

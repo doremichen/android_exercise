@@ -1,0 +1,8 @@
+com.adam.app.alarmdemo.app-pngs-0 E:\AndroidStudioProjects\AlarmWakeUpDemo\app\build\generated\res\pngs\release
+com.adam.app.alarmdemo.app-resValues-1 E:\AndroidStudioProjects\AlarmWakeUpDemo\app\build\generated\res\resValues\release
+com.adam.app.alarmdemo.app-rs-2 E:\AndroidStudioProjects\AlarmWakeUpDemo\app\build\generated\res\rs\release
+com.adam.app.alarmdemo.app-mergeReleaseResources-3 E:\AndroidStudioProjects\AlarmWakeUpDemo\app\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.adam.app.alarmdemo.app-mergeReleaseResources-4 E:\AndroidStudioProjects\AlarmWakeUpDemo\app\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.adam.app.alarmdemo.app-merged_res-5 E:\AndroidStudioProjects\AlarmWakeUpDemo\app\build\intermediates\merged_res\release
+com.adam.app.alarmdemo.app-main-6 E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\main\res
+com.adam.app.alarmdemo.app-release-7 E:\AndroidStudioProjects\AlarmWakeUpDemo\app\src\release\res

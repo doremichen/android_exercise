@@ -1,0 +1,4 @@
+#Thu Sep 05 15:32:34 CST 2024
+base.0=E\:\\AndroidStudioProjects\\AlarmWakeUpDemo\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
