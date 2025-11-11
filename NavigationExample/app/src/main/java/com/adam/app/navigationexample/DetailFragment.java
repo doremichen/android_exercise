@@ -93,7 +93,13 @@ public class DetailFragment extends Fragment {
             getParentFragmentManager().setFragmentResult("detail_result", bundle);
 
             //back to previous fragment
+            // navigateUp()	模擬使用者按下 「返回箭頭 (Up Button)」的行為	Toolbar 上的返回鍵
+            //    根據 NavGraph 層級結構 來決定要回哪裡（可能回到上一個「上層目的地」）
+            // popBackStack()	模擬使用者按下 「系統返回鍵 (Back Button)」的行為
+            //    一般 Fragment 返回或程式控制返回	根據 返回堆疊 (Back Stack)，單純移除當前目的地，
+            //    返回上一個 Fragment
             Navigation.findNavController(view).navigateUp();
+            //Navigation.findNavController(view).popBackStack();
         });
 
 
