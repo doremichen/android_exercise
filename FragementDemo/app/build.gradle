@@ -43,6 +43,8 @@ dependencies {
     implementation libs.material
     implementation libs.constraint.layout
     implementation libs.viewPager2
+    implementation libs.recyclerview
+
 
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit

@@ -26,7 +26,6 @@ package com.adam.app.fragementdemo;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 /**
@@ -39,6 +38,15 @@ public class MyAdapter extends FragmentStateAdapter {
 
     private static final int ITEMS = 2;
 
+    // map: position -> Fragment
+    private final static Fragment[] sFragments = new Fragment[ITEMS];
+
+    static {
+        sFragments[0] = ImageFragment.init(0);
+        sFragments[1] = ArrayListFragment.init(1);
+    }
+
+
     public MyAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
         Utils.Info(this, "MyAdapter constructor (ViewPager2) enter");
@@ -48,14 +56,7 @@ public class MyAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         Utils.Info(this, "[createFragment] position: " + position);
-
-        switch (position) {
-            case 0:
-            case 1:
-                return ImageFragment.init(position);
-            default:
-                return ArrayListFragment.init(position);
-        }
+        return sFragments[position];
     }
 
     @Override

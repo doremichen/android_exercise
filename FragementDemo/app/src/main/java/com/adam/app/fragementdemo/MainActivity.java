@@ -48,7 +48,6 @@ public class MainActivity extends FragmentActivity {
         mBinding = FragmentPagerBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
 
-
         this.mAdapter = new MyAdapter(this);
         // set adapter
         mBinding.pager.setAdapter(this.mAdapter);

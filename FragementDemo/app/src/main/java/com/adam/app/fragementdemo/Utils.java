@@ -13,7 +13,11 @@
 
 package com.adam.app.fragementdemo;
 
+import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
+import android.widget.Toast;
 
 /**
  * <h1>Utils</h1>
@@ -21,9 +25,27 @@ import android.util.Log;
  * @autor AdamChen
  * @since 2018/4/23
  */
-public abstract class Utils {
+public final class Utils {
 
     private static final String TAG = "Demo";
+
+
+    private Utils() {
+        throw new UnsupportedOperationException("Utils cannot be instantiated!!!");
+    }
+
+    public static void showToast(Context context, String str) {
+        // check if the main thread
+        if (Thread.currentThread() != Looper.getMainLooper().getThread()) {
+            new Handler(Looper.getMainLooper()).post(() -> {
+                // show toast
+                Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
+            });
+        }
+
+        Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
+    }
+
 
     /**
      * 
